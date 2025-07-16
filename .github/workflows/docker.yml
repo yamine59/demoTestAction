@@ -18,7 +18,7 @@ jobs:
           password: ${{ env.PASSWORD }}
       - uses: actions/checkout@v4
       - name: build
-        run: docker build -t $USERNAME/actionimage .
+        run: docker build -t $USERNAME/actionimage2 .
       - name: push
-        run: docker push $USERNAME/actionimage
+        run: docker push $USERNAME/actionimage2
 
